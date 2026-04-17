@@ -1,44 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Alex</a>
 
-        <nav>
-            
-            <ul style= "float:right;">
-                <li><a href="services.html">Home</a></li>
-                <li><a href="skills.html">about me</a></li>
-                <li><a href="about.html">register</a></li>
-                <li><a href="cv.html">cv</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-        </nav>	
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="main.jpg" alt="">
-        </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Alex</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Software developers use programming and design knowledge to build software that meets the needs of users. Typically, they will meet with a client who has a need for software to be developed, and then will build, test and deploy that software based on the specifications they have received.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="#" class="btn">Hire me</a>
-        </div>
-    </section>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="index.html" class="logo">Alex<span class="dot">.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grid-lines"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="badge reveal">Available for work</div>
+      <h1 class="reveal delay-1">Hi, I'm <span class="accent">Alex</span><br>Software Developer</h1>
+      <p class="hero-sub reveal delay-2">I build clean, purposeful digital experiences — from scalable web apps to elegant interfaces that users actually enjoy.</p>
+      <div class="hero-actions reveal delay-3">
+        <a href="contact.html" class="btn btn-primary">Hire Me</a>
+        <a href="cv.html" class="btn btn-ghost">Download CV <i class="fa fa-download"></i></a>
+      </div>
+      <div class="socials reveal delay-4">
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-img reveal delay-2">
+      <div class="img-ring"></div>
+      <img src="main.jpg" alt="Alex — Developer">
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat-item">
+      <span class="stat-num">3+</span>
+      <span class="stat-label">Years Experience</span>
+    </div>
+    <div class="divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">40+</span>
+      <span class="stat-label">Projects Completed</span>
+    </div>
+    <div class="divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">20+</span>
+      <span class="stat-label">Happy Clients</span>
+    </div>
+    <div class="divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">5★</span>
+      <span class="stat-label">Average Rating</span>
+    </div>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="services-preview" id="services">
+    <div class="section-head">
+      <p class="section-tag">What I Do</p>
+      <h2>Services <span class="accent">I Offer</span></h2>
+    </div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Web Development</h3>
+        <p>Full-stack web applications with modern frameworks. Fast, secure, and scalable solutions built to grow with you.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-pen-nib"></i></div>
+        <h3>UI/UX Design</h3>
+        <p>Pixel-perfect interfaces that convert. I design with purpose — balancing aesthetics with usability.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+        <h3>Responsive Design</h3>
+        <p>Experiences that work seamlessly on every device and every screen size, without compromise.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-terminal"></i></div>
+        <h3>Scripting & Automation</h3>
+        <p>Custom scripts and tools that save time, reduce errors, and automate repetitive workflows.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS PREVIEW -->
+  <section class="skills-preview">
+    <div class="section-head">
+      <p class="section-tag">My Stack</p>
+      <h2>Tech <span class="accent">Skills</span></h2>
+    </div>
+    <div class="skills-list">
+      <div class="skill-bar-item">
+        <div class="skill-info"><span>HTML / CSS</span><span>95%</span></div>
+        <div class="bar"><div class="bar-fill" style="--w:95%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-info"><span>JavaScript</span><span>85%</span></div>
+        <div class="bar"><div class="bar-fill" style="--w:85%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-info"><span>Python</span><span>78%</span></div>
+        <div class="bar"><div class="bar-fill" style="--w:78%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-info"><span>React</span><span>72%</span></div>
+        <div class="bar"><div class="bar-fill" style="--w:72%"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-info"><span>Node.js</span><span>68%</span></div>
+        <div class="bar"><div class="bar-fill" style="--w:68%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-inner">
+      <h2>Got a project in mind?</h2>
+      <p>Let's build something great together. I'm open to freelance, contracts, and full-time roles.</p>
+      <a href="contact.html" class="btn btn-primary">Let's Talk <i class="fa fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 <span class="accent">Alex</span>. Crafted with passion.</p>
+    <div class="footer-socials">
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="main.js"> 
+  </script>
 </body>
 </html>
