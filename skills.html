@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skills — Mac Andre</title>
+  <title>Skills — Venance Epafra Swai</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
@@ -11,15 +11,15 @@
 </head>
 <body>
   <header class="nav" id="nav">
-    <a href="index.html" class="logo">Mac Andre<span class="dot">.</span></a>
+    <a href="index.html" class="logo">Venance<span class="dot">.</span></a>
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
     <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="services.html">Services</a>
       <a href="skills.html" class="active">Skills</a>
+      <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
@@ -28,64 +28,72 @@
     <section class="page-hero">
       <div class="hero-copy reveal">
         <p class="section-tag">Expertise</p>
-        <h1>Tools and technologies I use every day.</h1>
-        <p>From mobile apps to web backends, I leverage a blend of languages, frameworks, and concepts to build efficient solutions.</p>
+        <h1>Tools and technologies I work with.</h1>
+        <p>From mobile apps to web backends and self-hosted AI, here's the stack I use to build and ship real applications.</p>
       </div>
     </section>
 
     <section class="skills-preview">
       <div class="section-head">
         <p class="section-tag">Technical Skills</p>
-        <h2>Development expertise</h2>
+        <h2>By category</h2>
       </div>
-      <div class="skills-list">
-        <div class="skill-bar-item reveal">
-          <div class="skill-info"><span>HTML / CSS</span><span>95%</span></div>
-          <div class="bar"><div class="bar-fill" style="--w:95%"></div></div>
+      <div class="skill-categories">
+        <div class="skill-category reveal">
+          <h3>Languages</h3>
+          <div class="skill-tag-row">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python</span>
+          </div>
         </div>
-        <div class="skill-bar-item reveal delay-1">
-          <div class="skill-info"><span>JavaScript</span><span>88%</span></div>
-          <div class="bar"><div class="bar-fill" style="--w:88%"></div></div>
+        <div class="skill-category reveal delay-1">
+          <h3>Frameworks & Libraries</h3>
+          <div class="skill-tag-row">
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">FastAPI</span>
+          </div>
         </div>
-        <div class="skill-bar-item reveal delay-2">
-          <div class="skill-info"><span>React</span><span>80%</span></div>
-          <div class="bar"><div class="bar-fill" style="--w:80%"></div></div>
+        <div class="skill-category reveal delay-2">
+          <h3>Databases</h3>
+          <div class="skill-tag-row">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Firebase</span>
+          </div>
         </div>
-        <div class="skill-bar-item reveal delay-3">
-          <div class="skill-info"><span>Node.js</span><span>75%</span></div>
-          <div class="bar"><div class="bar-fill" style="--w:75%"></div></div>
+        <div class="skill-category reveal delay-3">
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tag-row">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Linux (Ubuntu/WSL)</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Vite</span>
+          </div>
         </div>
-        <div class="skill-bar-item reveal delay-4">
-          <div class="skill-info"><span>Python</span><span>70%</span></div>
-          <div class="bar"><div class="bar-fill" style="--w:70%"></div></div>
+        <div class="skill-category reveal delay-4">
+          <h3>Concepts</h3>
+          <div class="skill-tag-row">
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Authentication (Bearer Tokens, Sanctum)</span>
+            <span class="skill-tag">MVC</span>
+            <span class="skill-tag">CRUD</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">RBAC</span>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="services-preview">
-      <div class="section-head">
-        <p class="section-tag">Tools</p>
-        <h2>Software I rely on</h2>
-      </div>
-      <div class="tech-grid">
-        <div class="card tech-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
-        <div class="card tech-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
-        <div class="card tech-card"><i class="fa-solid fa-mobile-screen"></i><span>Dart</span></div>
-        <div class="card tech-card"><i class="fa-solid fa-code"></i><span>Flutter</span></div>
-        <div class="card tech-card"><i class="fa-solid fa-server"></i><span>Laravel</span></div>
-        <div class="card tech-card"><i class="fa-solid fa-database"></i><span>SQL</span></div>
-        <div class="card tech-card"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
-        <div class="card tech-card"><i class="fa-solid fa-brain"></i><span>AI Concepts</span></div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2025 <span class="accent">Mac Andre</span>. Crafted with passion.</p>
+    <p>© 2026 <span class="accent">Venance Epafra Swai</span>. All rights reserved.</p>
     <div class="footer-socials">
-      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="#"><i class="fa-brands fa-github"></i></a>
-      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/venance-swai-b74971296" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/Epafravenance" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
     </div>
   </footer>
 

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Venance Epafra Swai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a href="index.html" class="logo">Venance<span class="dot">.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-copy reveal">
+        <p class="section-tag">Work</p>
+        <h1>A selection of things I've built.</h1>
+        <p>Personal projects, coursework, and internship work spanning web, mobile, and AI-powered applications.</p>
+      </div>
+    </section>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-card-top">
+          <h3>University Student Support Assistant</h3>
+        </div>
+        <span class="project-label">AI Course Project</span>
+        <p>A full-stack, self-hosted AI chatbot that answers university service queries by deploying a local LLM via Ollama, removing reliance on external APIs like OpenAI while keeping full data privacy. Includes a FastAPI backend with structured endpoints, and a React frontend with multi-session chat history, dark mode, and document-based Q&A.</p>
+        <div class="project-tags">
+          <span class="project-tag">FastAPI</span>
+          <span class="project-tag">React (Vite)</span>
+          <span class="project-tag">Ollama (LLaMA 3.2)</span>
+          <span class="project-tag">Python</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/Epafravenance/University-Student-Support-Assistant" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card reveal delay-1">
+        <div class="project-card-top">
+          <h3>Minted</h3>
+        </div>
+        <span class="project-label">Personal Project</span>
+        <p>A high-fidelity, interactive personal finance dashboard designed to help users track their income, expenses, and savings goals.</p>
+        <div class="project-tags">
+          <span class="project-tag">Next.js</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/Epafravenance/income-tracker" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card reveal delay-2">
+        <div class="project-card-top">
+          <h3>Student Attendance System (SAS)</h3>
+        </div>
+        <span class="project-label">Final Year Capstone Project</span>
+        <p>A mobile application that automates academic attendance tracking for 100+ students by using smartphone NFC capabilities to read student ID tags, with Firebase for real-time sync and secure authentication.</p>
+        <div class="project-tags">
+          <span class="project-tag">Flutter</span>
+          <span class="project-tag">Firebase</span>
+          <span class="project-tag">NFC</span>
+        </div>
+        <div class="project-actions">
+          <span class="badge-private"><i class="fa-solid fa-lock"></i> Private repository — code available on request</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal delay-3">
+        <div class="project-card-top">
+          <h3>Inventory Lite</h3>
+        </div>
+        <span class="project-label">Personal Project</span>
+        <p>A lightweight inventory management system covering core entities like products, categories, suppliers, stock levels, and transactions, built with clean MVC architecture.</p>
+        <div class="project-tags">
+          <span class="project-tag">Laravel</span>
+          <span class="project-tag">MySQL</span>
+          <span class="project-tag">Eloquent ORM</span>
+        </div>
+        <div class="project-actions">
+          <span class="badge-private"><i class="fa-solid fa-lock"></i> Private repository — code available on request</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal delay-4">
+        <div class="project-card-top">
+          <h3>End-to-End API Security Testing</h3>
+        </div>
+        <span class="project-label">Practical Lab — Job Board Platform</span>
+        <p>Designed a test suite covering 20+ API endpoints to map and validate backend routes for an online employment marketplace, testing role-based access control between employers and job seekers.</p>
+        <div class="project-tags">
+          <span class="project-tag">Postman</span>
+          <span class="project-tag">REST APIs</span>
+          <span class="project-tag">JSON</span>
+        </div>
+        <div class="project-actions">
+          <span class="badge-private"><i class="fa-solid fa-lock"></i> Private repository — code available on request</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 <span class="accent">Venance Epafra Swai</span>. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/venance-swai-b74971296" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/Epafravenance" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
